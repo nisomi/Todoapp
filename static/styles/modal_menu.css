@@ -1,0 +1,38 @@
+#myModalMenu {
+    position: absolute;
+    width: 223px;
+    height: 146px;
+    left: 640px;
+    top: 28px;
+
+    background: #FFFFFF;
+    border: 1px solid #414141;
+    box-shadow: 0px 2px 8px 2.5px rgba(53, 48, 48, 0.25);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+#exitBtn{
+    border-color:white;
+    background-color: white;
+}
+
+#settingsBtn{
+    border-color:white;
+    background-color: white;
+}
+
+#modalHeaderMenu {
+    border-bottom-color: white;
+    padding-top: 16px;
+    padding-bottom: 5px;
+}
+
+#modalBodyMenu{
+    padding-bottom: 8px;
+    padding-top: 5px;
+}

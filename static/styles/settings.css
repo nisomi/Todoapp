@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+
+body {
+	background: #f9f9f9;
+    font-family: 'Barlow Condensed';
+}
+
+#settingsContainer{
+	border-radius: 10px;
+	border: #414141;
+}
+
+h1,h3,h4{
+    font-family: 'DM Serif Display'!important;
+}
+
+#email:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    }
+
+#password:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    }
+
+#username:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    }
+
+#updateBtn {
+    width: 100px;
+    height: 40px;
+    background: rgba(127, 190, 95, 0.6);
+    border: 1px solid #496241;
+    border-radius: 10px;
+    color: #1e4114;
+     font-family: 'DM Serif Display'!important; ;
+    font-size: 18px !important;
+
+
+
+}
+
+#updateBtn:hover,
+#updateBtn:focus {
+    color: #14411a;
+    font-size:19px ;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#cancelBtn {
+    width: 100px;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    color: #415336;
+    font-family: 'DM Serif Display'!important; ;
+    font-size: 18px !important;
+
+
+
+}
+
+#cancelBtn:hover,
+#cancelBtn:focus {
+    color: #14411a;
+    font-size:19px ;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+	border: 1px solid #ffffff;
+}
+
+.emsg{
+    font-size: 12px;
+    color: #990404;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.error_class{
+    border-color: #a73b28;
+    box-shadow: 0 0 0 0.2rem rgba(167, 59, 40, 0.38);
+}
+
+.border-right{
+	border-right: 1px solid #dadada;;
+}
+.shadow {
+	    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3) !important;
+}
+
+.profile-tab-nav {
+	min-width: 250px;
+}
+
+.tab-content {
+	flex: 1;
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.nav-pills a.nav-link {
+	padding: 15px 20px;
+	border-bottom: 1px solid #ddd;
+	border-radius: 0;
+	color: #333;
+}
+.nav-pills a.nav-link i {
+	width: 20px;
+}
+
+.img-circle img {
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	border: 2px solid #fff;
+}
+
+.border-top{
+    width: 100%;
+}
+
+.progress-label{
+    margin-top: 15px;
+}
+
+.p-4{
+    margin-top: 20px;
+}
+#progress-bar_day,#progress-bar_week{
+    background: #79a770;
+}

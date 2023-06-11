@@ -1,0 +1,80 @@
+#textInput {
+    width: 503px;
+    height: 52px;
+    border-radius: 10px;
+    margin: 20px;
+
+}
+
+#textInput:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    }
+
+#daySelect {
+    width: 503px;
+    height: 52px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+#daySelect:focus {
+        border-color: #28a745;
+        box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+    }
+
+
+#modalHeader {
+    border-bottom-color: white;
+    padding: 16px;
+    padding-bottom: 0px;
+    margin-top: 24px;
+    margin-left: 16px;
+    margin-right: 13px;
+}
+
+
+#modalBody{
+    height: 250px;
+    padding: 0px;
+}
+
+#modalFooter {
+    border-top-color: white;
+    padding: 16px;
+    padding-top: 0px;
+    margin-bottom: 20px;
+}
+
+#staticBackdropLabel {
+    width: 480px;
+    height: 28px;
+    font-family: 'DM Serif Display';
+    font-size: 1.5rem!important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.62%;
+    color: #000000;
+
+}
+
+#saveBtn {
+    width: 227px;
+    height: 56px;
+    background: rgba(127, 190, 95, 0.6);
+    border: 1px solid #496241;
+    border-radius: 10px;
+    color: #1e4114;
+    font-family: 'DM Serif Display';
+    font-size: 20px;
+}
+
+#saveBtn:hover,
+#saveBtn:focus {
+    color: #14411a;
+    font-size:21px ;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+

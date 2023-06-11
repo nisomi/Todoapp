@@ -1,0 +1,231 @@
+.grid-container {
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 130px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid-item {
+    height: 234px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin: -0.5px;
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container {
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 120px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+    .grid-container {
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top: 120px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #dfdfdf;
+}
+
+.my_head_text {
+    position: absolute;
+    width: 300px;
+    height: 32px;
+    left: 60px;
+    top: 45px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 100%;
+    margin-bottom: 0px;
+    color: #000000;
+}
+
+.my_data {
+    position: absolute;
+    left: 60px;
+    top: 75px;
+    width: 100px;
+    height: 32px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 100%;
+    color: #8F8B8B;
+}
+
+
+#myEditModal, #myModal {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    width: 580px;
+    height: 320px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.my_week_to-do {
+    flex-basis: 25%;
+    height: 34vh;
+    border: 1px solid #000000;
+    margin: -0.5px;
+
+}
+
+.my_block {
+    flex-basis: 25%;
+    height: 34vh;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    margin: -0.5px;
+
+}
+
+.myList {
+    overflow-y: scroll;
+    height: 25vh;
+}
+
+.my_text {
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    margin-block-start: 16px;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    color: #000000;
+}
+
+.my_check {
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.completed {
+    color: #797979;
+    text-decoration: line-through;
+}
+
+#myDay {
+    margin-bottom: 8px;
+}
+
+#myCheck {
+    accent-color: rgba(53, 48, 48, 0.25);
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+
+#myCheckRound {
+    accent-color: rgba(53, 48, 48, 0.25);
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid rgba(19, 16, 16, 0.47);
+    appearance: none;
+    -webkit-appearance: none;
+    outline: #090909;
+    cursor: pointer;
+}
+
+#myCheckRound:checked {
+    background-color: rgb(35, 35, 35);
+    border: 1px solid rgb(35, 35, 35);
+}
+
+#add-btn {
+    border-radius: 50%;
+    position: fixed;
+    top: 90%;
+    right: 45px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.my_menu_button {
+    position: absolute;
+    right: 60px;
+    top: 45px;
+
+}
+
+.myLink {
+    position: fixed;
+    color: rgba(255, 255, 255, 0);
+    right: 60px;
+    top: 45px;
+    z-index: 1;
+}
+
+#myMenuButton {
+    border-color: white;
+}
+
+#mySettingsModal {
+    background: #FFFFFF;
+    border: 1px solid #414141;
+    box-shadow: 0px 2px 8px 2.5px rgba(53, 48, 48, 0.25);
+    border-radius: 10px;
+
+}
+
+.my_icon {
+    width: 25px;
+    height: 2px;
+    background-color: #626262;
+    margin: 6px 0;
+}

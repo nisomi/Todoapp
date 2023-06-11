@@ -1,11 +1,9 @@
 import MySQLdb
-from flask import render_template, request, jsonify, json, redirect, url_for, session
+from flask import render_template, request, jsonify, redirect, url_for, session
 from flask import Flask
 from flask_mysqldb import MySQL
 
-import check
-import data
-import database
+from python import check, data, database
 
 app = Flask(__name__)
 app.secret_key = 'why would I tell you my secret key?'
@@ -79,7 +77,7 @@ def settings():
         return render_template('settings.html', msg1=msg)
     return render_template('settings.html', done_today=database.stats_done_today(cursor, session.get('user')), all_today=database.stats_all_today(cursor, session.get('user')),
                            done=database.stats_done(cursor, session.get('user')), all=database.stats_all(cursor, session.get('user')),
-    user_name=session.get('username'), user_password=session.get('password'), user_email=session.get('email'))
+                           user_name=session.get('username'), user_password=session.get('password'), user_email=session.get('email'))
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
